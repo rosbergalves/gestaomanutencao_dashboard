@@ -453,6 +453,22 @@ AVERAGE(FtManutencao[TempoReal])
 Descrição: Tempo médio das manutenções com base na coluna TempoReal na tabela FtManutencao.
 ```
 
-### 3.4 Links
+### 3.4 Design Dashboard
+
+O design do dashboard (capa, cartões personalizados e layout) foi desenvolvido previamente no Figma e replicado no Power BI.
+
+**Capa**
+
+![Capa](https://raw.githubusercontent.com/rosbergalves/gestaomanutencao_dashboard/refs/heads/main/design_dashboard_figma/Capa_Manutencao.png)
+
+**Layout**
+
+![Layout](https://raw.githubusercontent.com/rosbergalves/gestaomanutencao_dashboard/refs/heads/main/design_dashboard_figma/Pagina1_Manutencao.png)
+
+**Cartões**
+
+![Cartões](https://raw.githubusercontent.com/rosbergalves/gestaomanutencao_dashboard/refs/heads/main/design_dashboard_figma/Pagina1_Manutencao.png)
+
+### 3.5 Links
 
 [Dashboard em Produção](https://app.powerbi.com/view?r=eyJrIjoiZDFkZTAxNWItOGQ2Yy00MDgwLWJkMmEtZTZjYTc1ZmFiNmI3IiwidCI6IjIxYjFmMTkyLTUyM2MtNGQ5Ny1iYzc2LWYzZDgwYTYxYjNmNCJ9)
