@@ -467,7 +467,7 @@ O design do dashboard (capa, cartões personalizados e layout) foi desenvolvido 
 
 **Cartões**
 
-![Cartões](https://raw.githubusercontent.com/rosbergalves/gestaomanutencao_dashboard/refs/heads/main/design_dashboard_figma/Pagina1_Manutencao.png)
+![Cartões](https://raw.githubusercontent.com/rosbergalves/gestaomanutencao_dashboard/refs/heads/main/design_dashboard_figma/Cart%C3%B5es.png)
 
 ### 3.5 Links
 
