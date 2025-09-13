@@ -83,14 +83,14 @@ O processo de transformação utiliza Power Query estruturando os dados em três
 ### Tratamentos Aplicados
 
 * **Padronização de Colunas de Texto**
-    * Todas os registros de texto das tabelas Dimensão foram convertidos para Primeira Linha Maiúsculo.
+    * Todos os registros de texto das tabelas Dimensão foram convertidos para primeira letra maiúscula.
     * Objetivo: Evitar inconsistências e variações de escrita.
 
 * **Substituição de Valores Nulos**
     * Valores vazios na coluna NumeroOrdem foram substituídos por Sem_Ordem.
     * Valores vazios na coluna Rank, foram substituídos por Sem_Rank.
 
-* **Criação de coluna derivada do Status da Consequencia**
+* **Criação de coluna derivada do Status da Ocorrencia**
     * Coluna StatusOcorrencia criada a partir da coluna Ocorrencia.
         * 1 = Máquina Parada
         * 2 = Máquina Parada Parcialmente
@@ -177,7 +177,7 @@ Cada Dimensão possui um relacionamento 1:N com a tabela fato FtManutencao, a di
         * Mes: Número do mês.
         * NomeMes: Nome do mês por extenso.
         * Trimestre: Identificação do trimestre (1, 2, 3, 4).
-        * DiaDaSemana: Nome do dia da semana.
+        * NomeDia: Nome do dia da semana.
         * DiaUtil: Flag indicando se o dia é útil ("Sim" ou "Não").
 
     * **DimEquipamento:** Dimensão de apoio ao modelo, responsável por armazenar a lista de equipamentos existentes nas ordens de manutenção. Permite análises relacionadas ao desempenho, falhas e impactos específicos por equipamento.
@@ -247,10 +247,10 @@ Cada Dimensão possui um relacionamento 1:N com a tabela fato FtManutencao, a di
         * ID_Calendario: Chave estrangeira para DimCalendario, representando a data de abertura/ocorrência.
         * ID_Equipamento: Chave estrangeira para DimEquipamento.
         * ID_CentroCusto: Chave estrangeira para DimCentroCusto.
-        * ID_Ocorrencia: Chave estrangeira para DimOcorrencia, que classifica o status da manutenção (parada, funcionando, parcial).
-        * ID_Rank: Chave estrangeira para DimRank, utilizada para análises de priorização ou classificação.
-        * ID_Hora: Chave estrangeira para DimHora, detalhando o horário de início/fim da manutenção.
-        * ID_Documento: Chave estrangeira para DimDocumento, vinculada ao documento de origem ou ordem de serviço.
+        * ID_Ocorrencia: Chave estrangeira para DimOcorrencia.
+        * ID_Rank: Chave estrangeira para DimRank.
+        * ID_Hora: Chave estrangeira para DimHora.
+        * ID_Documento: Chave estrangeira para DimDocumento.
     * **Colunas de tempo e desempenho:**
         * ID_HoraInicio: Horário em que a manutenção começou (extraído do sistema de ordens).
         * ID_HoraOrdem: Horário em que a ordem foi registrada/aberta.
